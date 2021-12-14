@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MORE</title>
+  <link rel="icon" type="image/x-icon" href="Logo.png">
+  <script src="https://kit.fontawesome.com/beb788cfd4.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="script.js" defer></script>
+
+	<style type="text/css">
+		
+		body {
+	background-color: black;
+	font-family: Arimo;
+	margin: 0px;
+  width:100%;
+    height: 100%;
+    background: linear-gradient(45deg, #1C2B2D, #150E56, #2A0944 , #132C33, #112031, #041C32);
+    background-size: 600% 200%;
+    animation: gradient 16s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes gradient {
+    0% {background-position: 0%}
+    100% {background-position: 100%}
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+  font-size: 25px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 17px 18px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+.topnav a:hover {
+  border-bottom: 3px solid red;
+  transition: 0.2s;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.2s;
+}
+
+.sidebar a:hover {
+  color: #A45D5D;
+  opacity: 100%;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 17px;
+  display: block;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  padding: 17px 18px;
+  border: none;
+}
+
+.openbtn:hover {
+  border-bottom: 3px solid red;
+  transition: 0.3s;
+}
+
+#main {
+  float: right;
+}
+
+#bar {
+  opacity: 100%;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.footer {
+   margin-bottom: 0px;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.2);
+   color: white;
+   text-align: center;
+   padding: 5px;
+}
+
+.footer-logo {
+  width: 100px;
+  height: 90px;
+  padding: 15px;
+}
+
+.container {
+  height: auto;
+  width: auto;
+  margin: 50px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+.h {
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.p {
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.link {
+border-radius: 20px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+width: 300px;
+}
+
+a.link:link, a.link:visited {
+  background-color: #519872;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+}
+
+a.link:hover, a.link:active {
+  background-color: #89C9B8;
+}
+
+.link2 {
+border-radius: 20px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+width: 300px;
+
+
+}
+
+a.link2:link, a.link2:visited {
+  background-color: #A13333;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+}
+
+a.link2:hover, a.link2:active {
+  background-color: #B85252;
+}
+
+	</style>
+
+</head>
+<body>
+
+	<div class="topnav">
+  <a id="active" href="index.html">HOME <i class="fas fa-home"></i></a>
+  <a href="contacts.html">CONTACT DETAILS <i class="fas fa-phone-alt"></i></a>
+  <a href="hobbies.html">HOBBIES <i class="fas fa-bookmark"></i></a>
+	<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ ABOUT WEBSITE</button> 
+</div></div>
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="creator.html">CREATOR</a><br>
+    <a href="services.html">SERVICES</a><br>
+    <a href="tools.html">TOOLS USED</a><br>
+    <a href="more.html">MORE</a>
+	</div>
+
+<div class="container">
+  
+<h1 class="h">LINK OF REFERENCES</h1>
+
+<a href="https://www.w3schools.com/html/default.asp" class="link">HTML</a><br><br>
+<a href="https://www.w3schools.com/css/default.asp" class="link">CSS</a><br><br>
+<a href="https://www.w3schools.com/js/default.asp" class="link">JAVASCRIPT</a><br><br>
+
+<p class="p">MY SOURCE CODE</p>
+
+<a href="https://drive.google.com/drive/folders/1BWL38ZmJ_z55pe2wN7vTWdbNrUrjE4cI?usp=sharing" class="link2">MY FILES</a>
+<br><br>
+</div>
+
+	<br>
+<br>
+<br>
+<footer class="footer">
+	<table> <tr>
+  <p class="footer-ref">CRYOBYTE INC. <i class="far fa-copyright"></i></p>
+  <img src="Logo.png" class="footer-logo">
+</tr>
+<tr>
+	<p></p>
+</tr>
+</table>
+</footer>
+
+</body>
+</html>

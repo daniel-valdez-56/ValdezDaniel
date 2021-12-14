@@ -1,0 +1,259 @@
+body {
+	background-color: black;
+	font-family: Arimo;
+	margin: 0px;
+  width:100%;
+    height: 100%;
+    background: linear-gradient(45deg, #1C2B2D, #150E56, #2A0944 , #132C33, #112031, #041C32);
+    background-size: 600% 200%;
+    animation: gradient 16s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes gradient {
+    0% {background-position: 0%}
+    100% {background-position: 100%}
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+  font-size: 25px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 17px 18px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+.topnav a:hover {
+  border-bottom: 3px solid red;
+  transition: 0.2s;
+}
+
+.topnav a#active {
+  border-bottom: 3px solid red;
+}
+
+.containerpic {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background:  rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+}
+
+.containerpic:hover .overlay {
+  opacity: 50%;
+}
+
+.text {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+h1 {
+	font-size: 50px;
+  margin: 0;
+}
+
+a.company:link {color:white;}
+a.company:visited {color:white;}
+a.company:hover {color:#D4ECDD;}
+
+a.company {
+  text-decoration: none;
+}
+
+.logo {
+	width: 80px;
+	height: 70px;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.2s;
+}
+
+.sidebar a:hover {
+  color: #A45D5D;
+  opacity: 100%;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 17px;
+  display: block;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  padding: 17px 18px;
+  border: none;
+}
+
+.openbtn:hover {
+  border-bottom: 3px solid red;
+  transition: 0.3s;
+}
+
+#main {
+  float: right;
+}
+
+#bar {
+  opacity: 100%;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+
+
+.collapsible {
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.active, .collapsible:hover {
+  background: rgba(0, 0, 0, 0.6);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background: rgba(0, 0, 0, 0.2);
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: white;
+}
+
+.content ul {
+  font-size: 17px;
+  word-spacing: 3px;
+  list-style-type: square;
+  line-height: 40px;
+}
+
+.table table, .table td, .table th {  
+  text-align: left;
+  margin: 10px;
+  padding: 10px;
+}
+
+.table table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 10px;
+}
+
+.table th, .table td {
+  padding: 15px;
+}
+
+.footer {
+   margin-bottom: 0px;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.2);
+   color: white;
+   text-align: center;
+   padding: 5px;
+}
+
+.footer-logo {
+  width: 100px;
+  height: 90px;
+  padding: 15px;
+}
+
+a.cryo:link {color:white;}
+a.cryo:visited {color:white;}
+a.cryo:hover {color:#D4ECDD;}
+
+a.cryo {
+  text-decoration: none;
+}
+
+

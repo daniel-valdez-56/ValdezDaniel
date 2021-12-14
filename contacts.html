@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>My Contact</title>
+
+	<link rel="icon" type="image/x-icon" href="Logo.png">
+
+	<script src="https://kit.fontawesome.com/beb788cfd4.js" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="script.js" defer>
+	</script>
+	<style type="text/css">
+
+body {
+	background-color: black;
+	font-family: Arimo;
+	margin: 0px;
+  width:100%;
+    height: 100%;
+    background: linear-gradient(45deg, #1C2B2D, #150E56, #2A0944 , #132C33, #112031, #041C32);
+    background-size: 600% 200%;
+    animation: gradient 16s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes gradient {
+    0% {background-position: 0%}
+    100% {background-position: 100%}
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+  font-size: 25px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 17px 18px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+.topnav a:hover {
+  border-bottom: 3px solid red;
+  transition: 0.2s;
+}
+
+.topnav a#active {
+  border-bottom: 3px solid red;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.2s;
+}
+
+.sidebar a:hover {
+  color: #A45D5D;
+  opacity: 100%;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 17px;
+  display: block;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  padding: 17px 18px;
+  border: none;
+}
+
+.openbtn:hover {
+  border-bottom: 3px solid red;
+  transition: 0.3s;
+}
+
+#main {
+  float: right;
+}
+
+#bar {
+  opacity: 100%;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+}
+
+.collapsible {
+  background-color: #323232;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.active, .collapsible:hover {
+  background-color: #2B2B28;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content-mail {
+	margin: 20px;
+}
+
+.a {
+	color: white;
+	align-content: left;
+
+}
+
+.submit {
+	background-color: #334257;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #9BA4B4;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+input[type=submit]:hover {
+  background-color: #84A9AC;
+}
+
+textarea[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.footer {
+   margin-bottom: 0px;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.2);
+   color: white;
+   text-align: center;
+   padding: 5px;
+}
+
+.footer-logo {
+  width: 100px;
+  height: 90px;
+  padding: 15px;
+}
+
+	</style>
+</head>
+<body>
+<div class="topnav">
+  <a href="index.html">HOME <i class="fas fa-home"></i></a>
+  <a id = "active" href="contacts.html">CONTACT DETAILS <i class="fas fa-phone-alt"></i></a>
+  <a href="hobbies.html">HOBBIES <i class="fas fa-bookmark"></i></a>
+	<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ ABOUT WEBSITE</button> 
+</div></div>
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="creator.html">CREATOR</a><br>
+    <a href="services.html">SERVICES</a><br>
+    <a href="tools.html">TOOLS USED</a><br>
+    <a href="more.html">MORE</a>
+	</div>
+
+	<div class="content-mail">
+	<h1 style="color: white;">CONTACT ME</h1>
+	<h6 style="color: white; font-size: 15px; font-style: italic; margin-top: 0px;">danielasanon54@gmail.com
+		<br>(+63) 918 511 7462</h6>
+      <form onsubmit="confirmInput()" action="mailto:daniel.valdez@adamson.edu.ph" method="post" enctype="text/plain">
+      	<label class="a">Enter your Name: </label><br>
+      	<input type="text" name="Name: " id = "UPPER"  onblur="myFunction()"><br><br>
+      	<label class="a">Enter your E-Mail: </label><br>
+      	<input type="email" name="Mail: " value=""><br><br>
+      	<label class="a">Your Message:</label><br>
+
+      	<textarea type = "text" name="yourMessage" rows="10" cols="100%"></textarea><br><br>
+      	<label for="country" style="color: white;">COUNTRY <i class="fas fa-globe"></i></label><br><br>
+   		<select id="country" name="country">
+      	<option value="Philippines">Philippines</option>
+      	<option value="Singapore">Singapore</option>
+      	<option value="USA">USA</option>
+      	<option value="United Kingdom">United Kingdom</option>
+      	<option value="Japan">Japan</option>
+      	<option value="Malaysia">Malaysia</option> 
+      	<option value="Thailand">Thailand</option>
+      	<option value="Israel">Israel</option>
+      	<option value="South Africa">South Africa</option>  
+    	</select><br><br>
+      	<input type="submit" name="" class="submit" value="SUBMIT">
+      	<br><br>
+      </form>
+
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <footer class="footer">
+	<table> <tr>
+  <p class="footer-ref">CRYOBYTE INC. <i class="far fa-copyright"></i></p>
+  <img src="Logo.png" class="footer-logo">
+</tr>
+<tr>
+	<p></p>
+</tr>
+</table>
+</footer>
+</body>
+</html>

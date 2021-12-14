@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TOOLS</title>
+  <link rel="icon" type="image/x-icon" href="Logo.png">
+  <script src="https://kit.fontawesome.com/beb788cfd4.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="script.js" defer></script>
+
+	<style type="text/css">
+		
+		body {
+	background-color: black;
+	font-family: Arimo;
+	margin: 0px;
+  width:100%;
+    height: 100%;
+    background: linear-gradient(45deg, #1C2B2D, #150E56, #2A0944 , #132C33, #112031, #041C32);
+    background-size: 600% 200%;
+    animation: gradient 16s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes gradient {
+    0% {background-position: 0%}
+    100% {background-position: 100%}
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+  font-size: 25px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 17px 18px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+.topnav a:hover {
+  border-bottom: 3px solid red;
+  transition: 0.2s;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.2s;
+}
+
+.sidebar a:hover {
+  color: #A45D5D;
+  opacity: 100%;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 17px;
+  display: block;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  padding: 17px 18px;
+  border: none;
+}
+
+.openbtn:hover {
+  border-bottom: 3px solid red;
+  transition: 0.3s;
+}
+
+#main {
+  float: right;
+}
+
+#bar {
+  opacity: 100%;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.footer {
+   margin-bottom: 0px;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.2);
+   color: white;
+   text-align: center;
+   padding: 5px;
+}
+
+.footer-logo {
+  width: 100px;
+  height: 90px;
+  padding: 15px;
+}
+
+.container {
+  height: auto;
+  width: auto;
+  margin: 50px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+.h {
+  text-align: center;
+  display: block;
+  color: white;
+  padding: 20px;
+}
+
+.p {
+  color: white;
+  text-align: justify;
+  text-justify: inter-word;
+  display: block;
+  padding: 20px;
+}
+
+.list {
+color: white;
+list-style-type: circle;
+}
+
+.list-header {
+color: #89C9B8;
+padding: 20px;
+
+}
+
+a.more:link {color:#89C9B8;}
+a.more:visited {color:#89C9B8;}
+a.more:hover {color:#A45D5D;}
+
+	</style>
+
+</head>
+<body>
+
+	<div class="topnav">
+  <a id="active" href="index.html">HOME <i class="fas fa-home"></i></a>
+  <a href="contacts.html">CONTACT DETAILS <i class="fas fa-phone-alt"></i></a>
+  <a href="hobbies.html">HOBBIES <i class="fas fa-bookmark"></i></a>
+	<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ ABOUT WEBSITE</button> 
+</div></div>
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="creator.html">CREATOR</a><br>
+    <a href="services.html">SERVICES</a><br>
+    <a href="tools.html">TOOLS USED</a><br>
+    <a href="more.html">MORE</a>
+	</div>
+
+<div class="container">
+  
+<h1 class="h">TOOLS USED TO DEVELOP THIS WEBSITE</h1>
+<br>
+<p class="list-header">TOOLS USED: </p>
+<ul class="list">
+
+<li>SUBLIME TEXT EDITOR</li>
+<li>CHROME BROWSER</li>
+<li>FONT AWESOME (ICONS)</li>
+
+</ul>
+<p class="list-header">LANGUAGE/STYLING USED: </p>
+<ul class="list">
+  
+<li>HTML (HYPERTEXT MARKUP LANGUAGE)</li>
+<li>CSS (CASCADING STYLE SHEET)</li>
+<li>JAVASCRIPT</li>
+
+</ul>
+<p class="list-header">NOTE: </p>
+<p class="p">NO BOOTSTRAP IS USED AND NO TEMPLATE NOR WEBSITE GENERATOR IS USED IN THE CREATION OF THIS WEBSITE. THE DEVELOPER MAINLY USED HTML, CSS, AND JAVASCRIPT TO DEVELOP and PUBLISH THIS WEBSITE IN PARTIAL FULFILLMENT FOR THE DEVELOPER'S COURSE SUBJECT ENTITLED "INTRODUCTION TO COMPUTING" BOTH LECTURE and LABORATORY. <a href="more.html" class="more">LEARN MORE</a> </p>
+
+</div>
+
+	<br>
+<br>
+<br>
+<footer class="footer">
+	<table> <tr>
+  <p class="footer-ref">CRYOBYTE INC. <i class="far fa-copyright"></i></p>
+  <img src="Logo.png" class="footer-logo">
+</tr>
+<tr>
+	<p></p>
+</tr>
+</table>
+</footer>
+
+</body>
+</html>

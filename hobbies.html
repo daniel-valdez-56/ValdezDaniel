@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>My Hobbies</title>
+
+	<link rel="icon" type="image/x-icon" href="Logo.png">
+
+	<script src="https://kit.fontawesome.com/beb788cfd4.js" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="script.js" defer></script>
+
+	<style type="text/css">
+		
+body {
+	background-color: black;
+	font-family: Arimo;
+	margin: 0px;
+    width:100%;
+    height: 100%;
+    background: linear-gradient(45deg, #1C2B2D, #150E56, #2A0944 , #132C33, #112031, #041C32);
+    background-size: 600% 200%;
+    animation: gradient 16s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes gradient {
+    0% {background-position: 0%}
+    100% {background-position: 100%}
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+  font-size: 25px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 17px 18px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+.topnav a:hover {
+  border-bottom: 3px solid red;
+  transition: 0.2s;
+}
+
+.topnav a#active {
+  border-bottom: 3px solid red;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.2s;
+}
+
+.sidebar a:hover {
+  color: #A45D5D;
+  opacity: 100%;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 17px;
+  display: block;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  padding: 17px 18px;
+  border: none;
+}
+
+.openbtn:hover {
+  border-bottom: 3px solid red;
+  transition: 0.3s;
+}
+
+#main {
+  float: right;
+}
+
+#bar {
+  opacity: 100%;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+}
+
+.collapsible {
+  background-color: #323232;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.active, .collapsible:hover {
+  background-color: #2B2B28;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.ml {
+
+	width: 300px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.hobby {
+
+	margin: 10px;
+	width: auto;
+	height: auto;
+	background:  rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+}
+
+.head {
+	color: white;
+	padding: 15px;
+}
+
+.footer {
+   margin-bottom: 0px;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.2);
+   color: white;
+   text-align: center;
+   padding: 5px;
+}
+
+.footer-logo {
+  width: 100px;
+  height: 90px;
+  padding: 15px;
+}
+
+	</style>
+</head>
+
+<body>
+
+<div class="topnav">
+  <a href="index.html">HOME <i class="fas fa-home"></i></a>
+  <a href="contacts.html">CONTACT DETAILS <i class="fas fa-phone-alt"></i></a>
+  <a id = "active" href="hobbies.html">HOBBIES <i class="fas fa-bookmark"></i></a>
+	<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ ABOUT WEBSITE</button> 
+</div></div>
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="creator.html">CREATOR</a><br>
+    <a href="services.html">SERVICES</a><br>
+    <a href="tools.html">TOOLS USED</a><br>
+    <a href="more.html">MORE</a>
+	</div>
+
+<h3 style="color: white; padding: 5px; font-size: 75px; margin: 10px;">HOBBIES</h3>
+	<div class="hobby">
+		<h1 class = "head">GAMING <i class="fas fa-dice-d6"></i></h1>
+		<img src="ml.png" class="ml"><br>
+
+		<h3 style="color: white; padding: 15px;">MOBILE LEGENDS</h3>
+		<p style="color: white; padding: 15px; text-align: justify;
+	text-justify: inter-word;">This is my most played game of all time. It is a multiplayer online battle arena that lets you fight in the
+		land of dawn with multiple heroes. These consist of tank, fighter, mage, assassin, marksman, and support. I usually use MARKSMAN and MAGE category as I am good at dealing damage and pushing towers. Mobile Legends: Bang Bang is a mobile multiplayer online battle arena developed and published by Moonton, a subsidiary of ByteDance.</p>
+	</div>
+
+	<div class="hobby">
+		<h1 class = "head">PROGRAMMING <i class="fas fa-laptop-code"></i></h1>
+		<img src="prog.png" class="ml"><br>
+
+		<h3 style="color: white; padding: 15px; ">COMPUTER PROGRAMMING</h3>
+		<p style="color: white; padding: 15px;text-align: justify;
+	text-justify: inter-word;">This is not my dream job but as technology continues to improve,
+			my interest also continue to grow about it. I took Bachelor of Science in Information Technology since
+			I don't have any interest to other types of job, I just want to sit and do my work at the same time earning
+			decently. Professionals use computer programming to develop code that guides how a computer, application, or software program operates. Computer programming is, at its most basic level, a set of instructions for facilitating specified operations.</p>
+	</div>
+
+	<div class="hobby">
+		<h1 class = "head">LEARNING <i class="fab fa-leanpub"></i></h1>
+		<img src="book.png" class="ml"><br>
+
+		<h3 style="color: white; padding: 15px; ">CONTINUOUS LEARNING</h3>
+		<p style="color: white; padding: 15px;text-align: justify;
+	text-justify: inter-word;">Learning promotes you to be able to perform something quickly and efficiently with the aid of available resources in order to achieve your objectives. The significance of learning is that it enables an individual to gain the essential skills and information through learning and knowledge in order to attain his or her objectives. Continuous learning is one of my hobbies since technology is evolving fast and it requires new knowledge every now and then.</p>
+	</div>
+	 <br>
+  <br>
+  <br>
+  <footer class="footer">
+	<table> <tr>
+  <p class="footer-ref">CRYOBYTE INC. <i class="far fa-copyright"></i></p>
+  <img src="Logo.png" class="footer-logo">
+</tr>
+<tr>
+	<p></p>
+</tr>
+</table>
+</footer>
+</body>
+
+</html>
+
